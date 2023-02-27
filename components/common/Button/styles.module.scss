@@ -1,3 +1,25 @@
+.greenBg {
+  background: var(--color-greenButtonBg);
+}
+
+.greenText {
+  a,
+  span {
+    color: var(--color-greenButtonBg);
+  }
+}
+
+.pinkBg {
+  background: var(--color-highlight);
+}
+
+.whiteText {
+  a,
+  span {
+    color: var(--color-primary);
+  }
+}
+
 .button {
   margin-top: 10px;
   align-self: center;
@@ -25,7 +47,6 @@
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: var(--color-highlight);
     border-radius: 1.625rem;
 
     .icon {
@@ -35,7 +56,6 @@
       bottom: 0;
       margin: auto;
       background: white;
-
       left: 0.625rem;
       width: 1.125rem;
       height: 0.125rem;
@@ -64,7 +84,6 @@
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: var(--color-highlight);
     font-weight: 400;
     line-height: 1.4;
     text-align: center;
@@ -72,7 +91,7 @@
 
     a,
     span {
-      color: var(--color-primary);
+      // color: var(--color-primary);
       font-weight: 400;
       text-decoration: none;
     }

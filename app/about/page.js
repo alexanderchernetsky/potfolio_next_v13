@@ -1,14 +1,13 @@
 import React from "react";
 import Head from "next/head";
+import Image from 'next/image';
 
 import PageTitle from "@/components/common/PageTitle";
 import ButtonComponent from "@/components/common/Button/Button";
 import SkillBlock from "@/components/specific/about/SkillBlock/SkillBlock";
-
-import alexander from "../../images/about/alex.jpg";
-import backupImageUrl from "../../images/about/alex_blured.jpg";
-import skills from "../../constants/about/skills";
-import tools from "../../constants/about/tools";
+import skills from "@/constants/about/skills";
+import tools from "@/constants/about/tools";
+import alex from "@/public/alex.jpg";
 
 import styles from './styles.module.scss';
 
@@ -17,7 +16,7 @@ const About = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>About | Alexander Chernetsky</title>
+        <title>About | Alex Chernetsky</title>
         <meta
           name="description"
           content="Alex Chernetsky - experienced frontend developer with a focus on React applications.
@@ -35,13 +34,17 @@ const About = () => {
           <section className={styles.mainInfoWrapper}>
             <div className={styles.aboutSection}>
               <div className={styles.photoWrapper}>
-                {/*todo: add next image */}
-                {/*<LoadImage*/}
-                {/*  altText="Alexander Chernetsky. Frontend developer from Belarus."*/}
-                {/*  desktopImgSrc={alexander}*/}
-                {/*  mobileImgSrc={alexander}*/}
-                {/*  backupImgSrc={backupImageUrl}*/}
-                {/*/>*/}
+                <Image
+                    alt="Alexander Chernetsky. Frontend developer"
+                    src={alex}
+                    width={300}
+                    height={300}
+                    style={{
+                      maxWidth: '100%',
+                      height: 'auto',
+                    }}
+                    placeholder='blur'
+                />
               </div>
               <h2 className={styles.title}>Alex Chernetsky - Web Developer</h2>
               <p className={styles.text}>

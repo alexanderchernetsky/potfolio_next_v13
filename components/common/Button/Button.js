@@ -3,21 +3,6 @@ import Link from "next/link";
 
 import styles from './styles.module.scss';
 
-// todo: remove
-function getStylesObjectForColorTheme(theme) {
-  switch (theme) {
-    case "green":
-      return {
-        circleBgColor: "green-button-bg-color",
-        btnTextColor: "green-button-bg-color"
-      };
-    default:
-      return {
-        circleBgColor: "highlight-color",
-        btnTextColor: "primary-color"
-      };
-  }
-}
 
 const ButtonComponent = ({
   text,
@@ -27,8 +12,8 @@ const ButtonComponent = ({
   loading,
   colorTheme
 }) => {
-  // todo: green btn, classnames?
-  // const buttonClassName = colorTheme === 'green' ? styles.greenButton : styles.button;
+  const bgColor = colorTheme === 'green' ? styles.greenBg : styles.pinkBg;
+  const txtColor = colorTheme === 'green' ? styles.greenText : styles.whiteText;
 
   return (
     <button
@@ -39,7 +24,7 @@ const ButtonComponent = ({
       tabIndex={0}
       // onKeyPress={onClick}
     >
-      <span className={styles.circle} aria-hidden="true">
+      <span className={`${styles.circle} ${bgColor}`} aria-hidden="true">
         {loading ? (
           <div className={styles.loaderWrapper}>
             <div className={styles.loader}/>
@@ -48,7 +33,7 @@ const ButtonComponent = ({
           <span className={styles.icon} />
         )}
       </span>
-      <span className={styles.buttonText}>
+      <span className={`${styles.buttonText} ${txtColor}`}>
         {type === "submit" ? (
           <span>{text}</span>
         ) : (
