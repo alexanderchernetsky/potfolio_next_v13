@@ -1,0 +1,117 @@
+.aboutPageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+
+.contentWrapper {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 30px 0 60px;
+  margin-top: 60px;
+//  ${customMedia.lessThan("desktop")`
+//padding: 20px 20px 80px;
+//  width: 90%;
+//  `};
+//  ${customMedia.lessThan("mobile")`
+//padding: 10px 10px 80px;
+//  `};
+}
+
+.blocksWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+//  ${customMedia.lessThan("tablet")`
+//margin-top: 10px;
+//  `};
+}
+
+.mainInfoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+//  ${customMedia.lessThan("tablet")`
+//flex-direction: column;
+//  `};
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-primary);
+  max-width: 590px;
+  padding: 0 10px;
+//  ${customMedia.lessThan("mobile")`
+//margin-top: 20px;
+//  `};
+}
+
+.photoWrapper {
+  width: 300px;
+  height: 300px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 45%, 75% 90%, 25% 90%, 0% 45%);
+  .real-image,
+  .placeholder-image {
+    width: 100%;
+    height: 110%; // hack
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-blockText);
+  margin: 0;
+  text-align: center;
+//  ${customMedia.lessThan("tablet")`
+//font-size: 18px;
+//  margin: 5px 0 0;
+//  `};
+}
+
+.text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: var(--color-blockText);
+  text-align: center;
+  a {
+    color: var(--color-greenButtonBg);
+    font-weight: 400;
+    text-decoration: none;
+  }
+//  ${customMedia.lessThan("tablet")`
+//font-size: 14px;
+//  `};
+}
+
+.skillsTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-blockText);
+  margin: 0 auto;
+//  ${customMedia.lessThan("tablet")`
+//font-size: 18px;
+//  `};
+}
+
+.skillsBlocksWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,35 @@
+.homePageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: var(--color-homePageBg);
+}
+
+.contentWrapper {
+  position: absolute;
+  width: 600px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.name {
+  color: var(--color-highlight);
+  font-weight: 400;
+}
+
+.buttonWrapper {
+  margin-top: 10px;
+}
