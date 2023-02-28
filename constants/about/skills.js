@@ -11,6 +11,8 @@ const skills = [
   "Cypress",
   "Jest",
   "React Testing Library",
+  "MongoDB",
+  "SQL",
   "Bootstrap",
   "Ant Design",
   "Material-UI",

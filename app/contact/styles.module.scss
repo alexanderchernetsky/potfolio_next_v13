@@ -1,0 +1,111 @@
+.contactPageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-contactPageBg);
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding-top: 30px;
+//  ${customMedia.lessThan("desktop")`
+//padding: 20px 20px 80px;
+//  width: 90%;
+//  `};
+//  ${customMedia.lessThan("mobile")`
+//padding: 10px 10px 80px;
+//  `};
+}
+
+.question {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-hover);
+//  ${customMedia.lessThan("desktop")`
+//margin-top: 20px;
+//  font-size: 16px;
+//  text-align: center;
+//  `};
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 786px;
+  box-sizing: border-box;
+  padding: 20px 50px 30px;
+//  ${customMedia.lessThan("desktop")`
+//padding: 0 20px;
+//  `};
+}
+
+.rowWrapper {
+  width: 100%;
+  margin-top: 10px;
+//  ${customMedia.lessThan("desktop")`
+//margin-top: 0;
+//  `};
+}
+
+.buttonsWrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+//  ${customMedia.lessThan("desktop")`
+//margin-top: 0;
+//  margin-bottom: 50px; // otherwise submit btn might be hidden under footer on small screen devices
+//  `};
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--color-cardTitle);
+  padding: 50px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//  ${customMedia.lessThan("desktop")`
+//padding: 15px 0;
+//  `};
+}
+
+.socIconsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footnote {
+  margin-top: 35px;
+  opacity: 0.6;
+//  ${customMedia.lessThan("desktop")`
+//margin-top: 5px;
+//  `};
+}
+
+.name {
+  text-transform: uppercase;
+  color: var(--color-footnoteColor);
+  font-size: 14px;
+}
+
+.year {
+  color: var(--color-highlight);
+  font-size: 16px;
+}

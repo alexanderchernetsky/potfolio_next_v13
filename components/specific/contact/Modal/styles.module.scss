@@ -1,0 +1,76 @@
+.modalBackground {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: var(--color-overlay);
+}
+
+.modalVisible {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalWindow {
+  background-color: var(--color-primary);
+  box-sizing: border-box;
+  padding: 30px;
+  width: 500px;
+  height: 300px;
+//  ${customMedia.lessThan("desktop")`
+//width: 335px;
+//  height: 230px;
+//  padding: 20px;
+//  `}
+}
+
+.close {
+  cursor: pointer;
+  display: flex;
+  color: var(--color-primary);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: fit-content;
+  height: 20px;
+  border-radius: 30px;
+}
+
+.modalTitle {
+  margin: 20px auto 0;
+  width: fit-content;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 55px;
+//  ${customMedia.lessThan("desktop")`
+//margin: 15px auto 0;
+//  `}
+}
+
+.modalContent {
+  margin: 15px auto 0;
+  width: fit-content;
+  max-width: 505px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+//  ${customMedia.lessThan("desktop")`
+//margin: 10px auto 0;
+//  line-height: 32px;
+//  max-width: 275px;
+//  `}
+  //p {
+  //  ${customMedia.lessThan("desktop")`
+  //margin: 20px 0;
+  //  `}
+  //}
+}

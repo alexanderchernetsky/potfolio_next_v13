@@ -1,6 +1,6 @@
-import linkedinIcon from "../../images/soc-icons/linkedin.svg";
-import instagramIcon from "../../images/soc-icons/instagram.svg";
-import githubIcon from "../../images/soc-icons/github.svg";
+import linkedinIcon from '@/public/soc-icons/linkedin.svg';
+import instagramIcon from "@/public/soc-icons/instagram.svg";
+import githubIcon from "@/public/soc-icons/github.svg";
 
 const socIcons = [
   {

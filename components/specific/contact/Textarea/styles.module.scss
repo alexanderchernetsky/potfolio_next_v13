@@ -1,0 +1,47 @@
+.textareaWrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactFormTextarea {
+  height: 130px;
+  // todo: import Aldrin
+  // font-family: Aldrin, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: var(--color-inputBg);
+  border-radius: 0;
+  border: none;
+  max-width: unset;
+  padding: 19px 19px 0 25px;
+  color: var(--color-primary);
+  resize: none;
+//  ${customMedia.lessThan("desktop")`
+//width: 100%;
+//  `}
+}
+
+.textareaWithError {
+  margin-top: unset !important;
+  border: 2px solid var(--color-highlight);
+}
+
+.errorLabel {
+  color: var(--color-highlight);
+  font-size: 13px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  //  ${customMedia.lessThan("desktop")`
+  //font-size: ${ax("footer-extra-small-font-size")}rem;
+  //  top: -11px;
+  //  `}
+}
+
+.labelWithError {
+  opacity: 0.9;
+}
