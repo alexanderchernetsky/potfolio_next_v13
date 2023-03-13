@@ -4,6 +4,9 @@ import Button from '../components/common/Button/Button';
 
 import styles from './page.module.scss';
 
+// hack to css flickering issue https://github.com/vercel/next.js/issues/17464
+import aboutPageStyles from './about/styles.module.scss';
+import contactPageStyles from "./contact/styles.module.scss";
 
 export default function Home() {
     // todo
